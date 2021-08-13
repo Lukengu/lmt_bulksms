@@ -24,7 +24,7 @@ class BulkSMS extends Client
    {
        $params = [
            'api_key' => $this->configuration->getApiKey(),
-           'password' => $this->configuration->getPassword(),
+           'password' => $this->configuration->getApiPassword(),
            'message' => $message,
            'sender' => $this->configuration->getSender(),
            'phone' => $this->validated($number)
