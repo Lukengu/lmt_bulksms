@@ -14,7 +14,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "BulkSMSServiceProvider"
+                "Loecos\\Bulksms\\BulkSMS\\Providers\\BulkSMSServiceProvider"
             ]
         }
     },
