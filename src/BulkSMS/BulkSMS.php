@@ -7,7 +7,7 @@ namespace Loecos\Bulksms\BulkSMS;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use Loecos\Bulksms\BulkSMS\Validation\PhoneNumberValidationFactory;
-use Loecos\Bulksms\Configuration;
+use Loecos\Bulksms\BulkSMS\Configuration;
 
 class BulkSMS extends Client
 {

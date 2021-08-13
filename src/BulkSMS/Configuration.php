@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Loecos\Bulksms;
+namespace Loecos\Bulksms\BulkSMS;
 
 
 use Loecos\Bulksms\BulkSMS\Exceptions\ConfigurationException;
