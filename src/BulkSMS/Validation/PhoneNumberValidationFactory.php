@@ -9,7 +9,7 @@ use Loecos\Bulksms\BulkSMS\Validation\MobileOperator\LMT;
 
 class PhoneNumberValidationFactory
 {
-    public function makeValidator(String $provider): IPhoneNumberValidation
+    public static function makeValidator(String $provider): IPhoneNumberValidation
     {
         switch($provider)
         {
