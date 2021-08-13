@@ -51,7 +51,11 @@ class Configuration
         if(!isset($config['mobile_sp'])){
             throw new ConfigurationException("Service provider required");
         }
-        $this->sender = $config['mobile_sp'];
+        $this->mobile_sp = $config['mobile_sp'];
+        if(!isset($config['sms_sender'])){
+            throw new ConfigurationException("Sender is required");
+        }
+        $this->sender = $config['sms_sender'];
 
 
         $this->base_endpoint = sprintf($this->base_endpoint, $this->api_version);
