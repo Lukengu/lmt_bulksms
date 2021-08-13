@@ -3,10 +3,14 @@
 
 namespace Loecos\Bulksms\BulkSMS\Providers;
 use Illuminate\Support\ServiceProvider;
+use Loecos\Bulksms\BulkSMS\BulkSMS;
 
 
 class BulkSMSServiceProvider extends ServiceProvider
 {
+
+
+
     /**
      * Publishes configuration file.
      *
@@ -29,5 +33,8 @@ class BulkSMSServiceProvider extends ServiceProvider
             __DIR__.'/../../../config/bulksms.php',
             'bulksms'
         );
+        $this->app->bind('bulksms', function($app) {
+            return new BulkSMS();
+        });
     }
 }

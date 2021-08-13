@@ -15,7 +15,10 @@
         "laravel": {
             "providers": [
                 "Loecos\\Bulksms\\BulkSMS\\Providers\\BulkSMSServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "Calculator": "Loecos\\Bulksms\\BulkSMS\\Facades\\BulkSMS"
+            }
         }
     },
     "authors": [
