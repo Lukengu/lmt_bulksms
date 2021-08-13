@@ -4,6 +4,7 @@
 namespace Loecos\Bulksms\BulkSMS\Validation\MobileOperator;
 
 
+use Loecos\Bulksms\BulkSMS\Validation\Exceptions\ValidationException;
 use Loecos\Bulksms\BulkSMS\Validation\IPhoneNumberValidation;
 
 class LMT implements IPhoneNumberValidation
