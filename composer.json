@@ -1,0 +1,28 @@
+{
+    "name": "loecos/bulksms",
+    "description": "LMT Group Bulk SMS Wrapper",
+    "type": "project",
+    "require": {
+        "guzzlehttp/guzzle": "7.4.x-dev"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Loecos\\Bulksms\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BulkSMSServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Bona Philippe",
+            "email": "philippe@loecos.net"
+        }
+    ],
+    "minimum-stability": "dev"
+}
