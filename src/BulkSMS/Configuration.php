@@ -72,13 +72,7 @@ class Configuration
 
 
 
-    /**
-     * @return mixed
-     */
-    public function getApiVersion()
-    {
-        return $this->api_version;
-    }
+
 
 
 

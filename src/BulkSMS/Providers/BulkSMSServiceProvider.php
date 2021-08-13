@@ -4,6 +4,7 @@
 namespace Loecos\Bulksms\BulkSMS\Providers;
 use Illuminate\Support\ServiceProvider;
 use Loecos\Bulksms\BulkSMS\BulkSMS;
+use Loecos\Bulksms\BulkSMS\Configuration;
 
 
 class BulkSMSServiceProvider extends ServiceProvider
@@ -34,7 +35,8 @@ class BulkSMSServiceProvider extends ServiceProvider
             'bulksms'
         );
         $this->app->bind('bulksms', function($app) {
-            return new BulkSMS();
+            $configuration = new Configuration();
+            return new BulkSMS($configuration);
         });
     }
 }

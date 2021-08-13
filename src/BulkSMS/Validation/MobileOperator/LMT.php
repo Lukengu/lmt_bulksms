@@ -9,7 +9,11 @@ use Loecos\Bulksms\BulkSMS\Validation\IPhoneNumberValidation;
 
 class LMT implements IPhoneNumberValidation
 {
-
+    /**
+     * @param $number
+     * @return string
+     * @throws ValidationException
+     */
     public function validated($number): string
     {
         $number = preg_replace('/\+/', "",$number);

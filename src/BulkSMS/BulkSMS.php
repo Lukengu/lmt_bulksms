@@ -15,11 +15,22 @@ class BulkSMS extends Client
 
    private $configuration;
 
+    /**
+     * BulkSMS constructor.
+     * @param \Loecos\Bulksms\BulkSMS\Configuration $configuration
+     */
    public function __construct(Configuration $configuration)
    {
        $this->configuration = $configuration;
        parent::__construct();
    }
+
+    /**
+     * @param $number
+     * @param $message
+     * @return mixed
+     * @throws RequestException
+     */
 
    public function sendMessage($number,$message)
    {
@@ -39,6 +50,10 @@ class BulkSMS extends Client
        return  json_decode($response->getBody()->getContents());
    }
 
+    /**
+     * @param $number
+     * @return string
+     */
    private function validated($number)
    {
        $validator = PhoneNumberValidationFactory::makeValidator($this->configuration->getMobileSp());
