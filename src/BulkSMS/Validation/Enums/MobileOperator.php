@@ -6,7 +6,9 @@ use ReflectionClass;
 
 abstract class MobileOperator extends Enum
 {
-    const LMT= "LMT";
+    const OM = "OM";
+    const MOMO= "MOMO";
+    const EUM = "EUM";
 }
 abstract class Enum {
     static function getKeys(){

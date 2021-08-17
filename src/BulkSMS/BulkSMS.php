@@ -39,7 +39,7 @@ class BulkSMS extends Client
            'password' => $this->configuration->getApiPassword(),
            'message' => $message,
            'sender' => $this->configuration->getSender(),
-           'phone' => $this->validated($number)
+           'phone' => $number
 
        ];
        try {
@@ -56,8 +56,8 @@ class BulkSMS extends Client
      */
    private function validated($number)
    {
-       $validator = PhoneNumberValidationFactory::makeValidator($this->configuration->getMobileSp());
-       return $validator->validated($number);
+       //$validator = PhoneNumberValidationFactory::makeValidator($this->configuration->getMobileSp());
+      // return $validator->validated($number);
    }
 
 }

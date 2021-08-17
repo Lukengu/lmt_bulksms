@@ -10,6 +10,6 @@ return [
     'base_endpoint' => env('BULKSMS_BASE_ENDPOINT', 'https:://app lmtgroup com/bulksms/api/%s/push'),
     'api_key' => env('BULKSMS_API_KEY', 'YOUR API KEY'),
     'api_password' => env('BULKSMS_API_PASSWORD', 'YOUR API PASSWORD'),
-    'mobile_sp' => env('BULKSMS_SP', 'LMT'),
+    'mobile_sp' => env('BULKSMS_SP', 'OM'),
 
 ];
