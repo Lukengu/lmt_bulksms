@@ -6,6 +6,8 @@ namespace Loecos\Bulksms\BulkSMS\Validation;
 
 use Loecos\Bulksms\BulkSMS\Validation\Enums\MobileOperator;
 use Loecos\Bulksms\BulkSMS\Validation\MobileOperator\OM;
+use Loecos\Bulksms\BulkSMS\Validation\MobileOperator\MOMO;
+use Loecos\Bulksms\BulkSMS\Validation\MobileOperator\EUM;
 
 class PhoneNumberValidationFactory
 {
